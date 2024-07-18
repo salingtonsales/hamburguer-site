@@ -9,25 +9,17 @@
 }
 
 body {
-    position:absolute;
     background-color: rgb(31, 29, 29);
 }
-.fundo{
-    position: relative;
-
-   
-}
-
-
 
 header {
+    z-index: 1;
     position: fixed;
     display: flex;
     background-color: rgb(218, 34, 21);
     width: 100%;
     display: block;
     opacity: 0.8;
-    z-index: 1;
 
 }
 
@@ -42,6 +34,7 @@ header {
     color: #ffffff;
 
 }
+
 
 #animacaoTop {
     display: inline;
@@ -68,8 +61,6 @@ a {
 }
 
 
-
-
 .container {
     display: flex;
 
@@ -80,53 +71,52 @@ a {
     height: 800px;
     flex: 1;
     transition: .3s all ease;
-    background: url(./assets/c1c05153-f6b6-471f-a45d-276750cc5c1a.jpeg);
+    background-image: url(./assets/c1c05153-f6b6-471f-a45d-276750cc5c1a.jpeg);
     border-right: solid rgb(255, 255, 255);
     background-position: center;
     background-size: cover;
-  
+    border-bottom: solid #ff0000;
 
-    
 }
-
-
 
 .card1:hover {
     flex: 2;
-   
- 
+    background-color: aqua;
 }
 
 .card2 {
     height: 800px;
+
     flex: 1;
+
     transition: .3s all ease;
     background-image: url(./assets/hamburgueria_em_maua_abc_imovel_blog.jpg);
     background-position: center;
     background-size: cover;
+    border-bottom: solid #ff0000;
 
 }
 
 .card2:hover {
     flex: 2;
-
+    background-color: aqua;
 }
 
 .card3 {
     border-left: solid rgb(255, 255, 255);
     height: 800px;
+
     flex: 1;
     transition: .3s all ease;
-    background: url(./assets/refri-guarana.webp);
+    background-image: url(./assets/refri-guarana.webp);
     background-position: center;
     background-size: cover;
-
-
+    border-bottom: solid #ff0000;
 }
 
 .card3:hover {
     flex: 2;
-
+    background-color: aqua;
 }
 
 h2 {
@@ -136,7 +126,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     line-height: 70px;
-    padding: 60px;
+    padding: 50px;
 }
 
 span {
@@ -147,25 +137,8 @@ span {
     display: grid;
     list-style: none;
     grid-template-columns: 300px 300px 300px;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 40px;
-}
-
-.cardmenu {
-    width: 250px;
-    height: 304px;
-    border-radius: 20px;
-    background: #212121;
-    box-shadow: 15px 15px 30px rgb(25, 25, 25),
-                -15px -15px 30px rgb(60, 60, 60);
-              transition: 0.2s ease-in-out;
-
-}
-.cardmenu:hover{
-    transform: scale(1.1);
 }
 
 p {
@@ -174,7 +147,8 @@ p {
     font-weight: 900;
     margin-left: 10px;
 }
-.valorP{
+
+.valorP {
     color: #008000
 }
 
@@ -183,8 +157,27 @@ img {
     border-radius: 5px;
 }
 
-.cardimg {
+#carti {
+    position: fixed;
+    border: none;
+    border-radius: 100px;
+    right: 59px;
+    bottom: 43px;
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
     z-index: 1;
+
+}
+
+.carrinho {
+    position: relative;
+    left: 12px;
+    top: 11px;
+}
+
+.cardimg {
     padding: 200px;
     display: flex;
     justify-content: center;
@@ -192,54 +185,90 @@ img {
     opacity: 0;
     animation: 1.5s cardimg;
 }
+
 .cardimg:hover {
     transition: .3s all ease;
     opacity: 1;
-  
+
+}
+
+.cardapio {
+    display: grid;
+    list-style: none;
+    grid-template-columns: 300px 300px 300px;
+    gap: 30px;
+    position: relative;
+    left: 30px;
+
+}
+
+.cardmenu {
+    width: 250px;
+    height: 304px;
+    border-radius: 20px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+        -15px -15px 30px rgb(85, 84, 84);
+    transition: 0.2s ease-in-out;
+
+}
+
+.cardmenu:hover {
+    transform: scale(1.1);
 }
 
 
-@keyframes cardimg {
-    0% {
-        transform: scale(2.0);
-    }
+.buttons {
 
-    100% {
-        transform: scale(2.0);
-    }
+    margin-left: 430px;
+    margin-bottom: 70px;
+
+    cursor: pointer;
+
 }
-.buttons{
-position: relative;
-left: 500px;
-bottom: 20px;
-    
-}
-.bt{
-  color: rgb(218, 34, 21); 
-  border: none;
-  background-color: transparent;
-  padding-left: 23px;
-  font-size: 50px;
- font-weight: 900;
- cursor: pointer;
-}
-.bt:hover{
-    color: #df5709;
-    transition: all 0.3s;
-}
-#carti{
-    position:fixed;
+
+.bt {
+    color: rgb(255, 17, 0);
     border: none;
-    border-radius: 100px;
+    background-color: transparent;
+    padding-left: 10px;
+    font-size: 60px;
+    font-weight: 900;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.bt:hover {
+    color: #ff5e00;
+    transition: all 0.5s;
+    text-decoration: underline;
+}
+
+.pedirMais {
+    position: relative;
+    left: 590px;
+    bottom: -161px;
     z-index: 1;
-    right: 59px;
-    bottom: 43px;
-    background-color: #ffffff;
-    width: 50px;
+    background-color: transparent;
+    width: 441px;
     height: 50px;
-    }
-    .carrinho{
-      position: relative;
-      left: 12px;
-      top: 11px;
-    }
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: bold;
+    border: solid #ffffff;
+}
+
+.pedirMais:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+.fundo{
+    background-image: url(./assets/be0295acb652e7209191b9f4e10f07de.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    padding-bottom: 240px;
+    z-index: -1;
+ 
+    width: 1600px;}
