@@ -27,7 +27,6 @@ header {
     display: flex;
     justify-content: center;
 
-
 }
 
 .i {
@@ -208,7 +207,7 @@ img {
     border-radius: 20px;
     background: #212121;
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
-        -15px -15px 30px rgb(85, 84, 84);
+        -15px -15px 30px rgb(194, 191, 191);
     transition: 0.2s ease-in-out;
 
 }
@@ -228,7 +227,7 @@ img {
 }
 
 .bt {
-    color: rgb(255, 17, 0);
+    color: rgb(255, 255, 255);
     border: none;
     background-color: transparent;
     padding-left: 10px;
@@ -264,11 +263,189 @@ img {
     background-color: #ffffff;
     color: #000;
 }
-.fundo{
-    background-image: url(./assets/be0295acb652e7209191b9f4e10f07de.jpg);
+
+.fundo {
+    background-image: url(./assets/6f48643ecafbedae88eea843eb3fdbd7.jpg);
     background-size: cover;
     background-repeat: repeat;
     padding-bottom: 240px;
     z-index: -1;
- 
-    width: 1600px;}
+
+    width: 1600px;
+}
+
+@media screen and (max-width:1300px) {
+
+    header {
+        z-index: 1;
+        position: fixed;
+        display: flex;
+        background-color: rgb(218, 34, 21);
+        width: 100%;
+        display: block;
+        opacity: 0.8;
+
+    }
+
+    .topo {
+        display: flex;
+        justify-content: left;
+
+    }
+
+    #animacaoTop {
+        display: inline;
+        padding: 20px;
+        font-size: 36px;
+        margin-left: -7px;
+
+    }
+
+    #animacaoTop:hover {
+        transition: .3s all ease;
+
+        background-color: #ffffff;
+
+        a {
+            color: black;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 27px;
+    }
+
+    .card1 {
+        height: 500px;
+        width: 200px;
+
+        flex: 1;
+        transition: .3s all ease;
+        background-image: url(./assets/c1c05153-f6b6-471f-a45d-276750cc5c1a.jpeg);
+        border-right: solid rgb(255, 255, 255);
+        background-position: center;
+        background-size: cover;
+        border-bottom: solid #ff0000;
+
+    }
+
+    .card2 {
+        height: 500px;
+        width: 200px;
+
+        flex: 1;
+
+        transition: .3s all ease;
+        background-image: url(./assets/hamburgueria_em_maua_abc_imovel_blog.jpg);
+        background-position: center;
+        background-size: cover;
+        border-bottom: solid #ff0000;
+
+    }
+
+    .card3 {
+        border-left: solid rgb(255, 255, 255);
+        height: 500px;
+        width: 182px;
+        flex: 1;
+        transition: .3s all ease;
+        background-image: url(./assets/refri-guarana.webp);
+        background-position: center;
+        background-size: cover;
+        border-bottom: solid #ff0000;
+    }
+
+    h2 {
+        color: #ffffff;
+        font-size: 35px;
+        display: flex;
+
+
+        line-height: 42px;
+
+    }
+
+    .cardapio {
+        display: grid;
+        list-style: none;
+        grid-template-columns: 100px 100px 100px;
+        gap: 37px;
+        position: relative;
+left: -10px;
+        bottom: 100px;
+
+    }
+
+    .cardmenu {
+        width: 109px;
+        height: 175px;
+        border-radius: 10px;
+        background: #212121;
+        -webkit-box-shadow: -11px -8px 19px 1px rgba(255, 255, 255, 0.48);
+        -moz-box-shadow: -11px -8px 19px 1px rgba(255, 255, 255, 0.48);
+        box-shadow: -11px -8px 19px 1px rgba(255, 255, 255, 0.48);
+        transition: 0.2s ease-in-out;
+
+    }
+
+    p {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 900;
+        margin-left: 10px;
+    }
+
+    .fundo {
+        background-image: url(./assets/6f48643ecafbedae88eea843eb3fdbd7.jpg);
+        padding-bottom: 370px;
+        z-index: -1;
+        width: 583px;
+    }
+
+    .buttons {
+        margin-left: 134px;
+        margin-bottom: 70px;
+        cursor: pointer;
+    }
+    .bt {
+        color: rgb(255, 255, 255);
+        border: none;
+        background-color: transparent;
+        padding-left: 35px;
+        font-size: 26px;
+        font-weight: 900;
+        cursor: pointer;
+        margin-left: -22px;
+        margin-bottom: 55px;
+    }
+    .pedirMais {
+        position: relative;
+        left: 63px;
+        bottom: -94px;
+        z-index: 1;
+        background-color: transparent;
+        width: 441px;
+        height: 50px;
+        border-radius: 30px;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 100;
+        font-family: bold;
+        border: solid #ffffff;
+    }
+    #carti {
+        position: fixed;
+        border: none;
+        border-radius: 100px;
+        right: 274px;
+        bottom: 43px;
+        background-color: #ffffff;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        z-index: 1;
+    
+    }
+}
