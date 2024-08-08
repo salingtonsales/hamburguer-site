@@ -23,6 +23,37 @@ header {
 
 }
 
+#cheddar {
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 900px;
+    transform: translate3d(0px, -8.60058px, 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    width: 100px;
+}
+
+#tomate {
+    position: absolute;
+    width: 170px;
+    top: 1040px;
+    left: 170px;
+}
+
+#alface {
+    position: absolute;
+    width: 300px;
+    left: 1300px;
+}
+
+#pote {
+    width: 200px;
+    position: absolute;
+    top: 1000px;
+    left: 1400px;
+}
+
 .topo {
     display: flex;
     justify-content: center;
@@ -274,7 +305,7 @@ img {
     width: 1600px;
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:320px) {
 
     header {
         z-index: 1;
@@ -296,7 +327,7 @@ img {
     #animacaoTop {
         display: inline;
         padding: 20px;
-        font-size: 36px;
+        font-size: 14px;
         margin-left: -7px;
 
     }
@@ -314,12 +345,12 @@ img {
     a {
         text-decoration: none;
         color: #ffffff;
-        font-size: 27px;
+        font-size: 16px;
     }
 
     .card1 {
-        height: 500px;
-        width: 200px;
+        height: 400px;
+        width: 120px;
 
         flex: 1;
         transition: .3s all ease;
@@ -332,8 +363,9 @@ img {
     }
 
     .card2 {
-        height: 500px;
-        width: 200px;
+        height: 400px;
+        width: 120px;
+
 
         flex: 1;
 
@@ -347,8 +379,9 @@ img {
 
     .card3 {
         border-left: solid rgb(255, 255, 255);
-        height: 500px;
-        width: 182px;
+        height: 400px;
+        width: 120px;
+
         flex: 1;
         transition: .3s all ease;
         background-image: url(./assets/refri-guarana.webp);
@@ -361,9 +394,8 @@ img {
         color: #ffffff;
         font-size: 35px;
         display: flex;
-
-
         line-height: 42px;
+        margin-left: 4px;
 
     }
 
@@ -371,16 +403,16 @@ img {
         display: grid;
         list-style: none;
         grid-template-columns: 100px 100px 100px;
-        gap: 37px;
+        gap: 11px;
         position: relative;
-left: -10px;
-        bottom: 100px;
+        left: 5px;
+        bottom: 50px;
 
     }
 
     .cardmenu {
-        width: 109px;
-        height: 175px;
+        width: 97px;
+        height: 162px;
         border-radius: 10px;
         background: #212121;
         -webkit-box-shadow: -11px -8px 19px 1px rgba(255, 255, 255, 0.48);
@@ -401,14 +433,15 @@ left: -10px;
         background-image: url(./assets/6f48643ecafbedae88eea843eb3fdbd7.jpg);
         padding-bottom: 370px;
         z-index: -1;
-        width: 583px;
+        width: 360px;
     }
 
     .buttons {
-        margin-left: 134px;
+        margin-left: 27px;
         margin-bottom: 70px;
         cursor: pointer;
     }
+
     .bt {
         color: rgb(255, 255, 255);
         border: none;
@@ -420,32 +453,70 @@ left: -10px;
         margin-left: -22px;
         margin-bottom: 55px;
     }
+
     .pedirMais {
         position: relative;
-        left: 63px;
+        left: 47px;
         bottom: -94px;
         z-index: 1;
         background-color: transparent;
-        width: 441px;
-        height: 50px;
+        width: 258px;
+        height: 44px;
         border-radius: 30px;
         color: #ffffff;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 100;
         font-family: bold;
         border: solid #ffffff;
     }
+
     #carti {
         position: fixed;
         border: none;
         border-radius: 100px;
-        right: 274px;
-        bottom: 43px;
+        right: 308px;
+        bottom: 30px;
         background-color: #ffffff;
         width: 50px;
         height: 50px;
         cursor: pointer;
         z-index: 1;
-    
+
     }
+
+    #cheddar {
+        position: absolute;
+        display: block;
+        left: 0px;
+        top: 1006px;
+        transform: translate3d(0px, -8.60058px, 0px);
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        width: 62px;
+    }
+
+    #tomate {
+        position: absolute;
+        width: 86px;
+        top: 1259px;
+        left: 53px;
+    }
+
+    #alface {
+        position: absolute;
+        width: 300px;
+        left: 60px;
+        top: 1200px;
+    }
+
+    #pote {
+        width: 102px;
+        position: absolute;
+        top: 460px;
+        left: 268px;
+    }
+
+
+
+
 }
