@@ -9,7 +9,8 @@
 }
 
 body {
-    background-color: rgb(31, 29, 29);
+    background-color: rgb(255, 0, 0);
+    width: 100%;
 }
 
 header {
@@ -21,37 +22,6 @@ header {
     display: block;
     opacity: 0.8;
 
-}
-
-#cheddar {
-    position: absolute;
-    display: block;
-    left: 0px;
-    top: 900px;
-    transform: translate3d(0px, -8.60058px, 0px);
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    width: 100px;
-}
-
-#tomate {
-    position: absolute;
-    width: 170px;
-    top: 1040px;
-    left: 170px;
-}
-
-#alface {
-    position: absolute;
-    width: 300px;
-    left: 1300px;
-}
-
-#pote {
-    width: 200px;
-    position: absolute;
-    top: 1000px;
-    left: 1400px;
 }
 
 .topo {
@@ -207,28 +177,13 @@ img {
     top: 11px;
 }
 
-.cardimg {
-    padding: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    animation: 1.5s cardimg;
-}
-
-.cardimg:hover {
-    transition: .3s all ease;
-    opacity: 1;
-
-}
-
 .cardapio {
     display: grid;
     list-style: none;
     grid-template-columns: 300px 300px 300px;
     gap: 30px;
-    position: relative;
-    left: 30px;
+    margin-left: 35px;
+
 
 }
 
@@ -246,7 +201,6 @@ img {
 .cardmenu:hover {
     transform: scale(1.1);
 }
-
 
 .buttons {
 
@@ -301,222 +255,427 @@ img {
     background-repeat: repeat;
     padding-bottom: 240px;
     z-index: -1;
-
-    width: 1600px;
+    width: 100%;
 }
 
-@media screen and (max-width:320px) {
+#cheddar {
+    position: absolute;
+    display: block;
+    top: 900px;
+    transform: translate3d(0px, -8.60058px, 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    width: 100px;
+}
 
-    header {
-        z-index: 1;
-        position: fixed;
-        display: flex;
-        background-color: rgb(218, 34, 21);
-        width: 100%;
-        display: block;
-        opacity: 0.8;
+#tomate {
+    position: absolute;
+    width: 170px;
+    top: 1040px;
+    left: 170px;
+}
 
-    }
+#alface {
+    position: absolute;
+    width: 298px;
+    left: 1285px;
+}
 
-    .topo {
-        display: flex;
-        justify-content: left;
+#pote {
+    width: 200px;
+    position: absolute;
+    top: 1000px;
+    left: 1282px;
+}
 
-    }
-
-    #animacaoTop {
-        display: inline;
-        padding: 20px;
-        font-size: 14px;
-        margin-left: -7px;
-
-    }
-
-    #animacaoTop:hover {
-        transition: .3s all ease;
-
-        background-color: #ffffff;
-
-        a {
-            color: black;
-        }
-    }
-
-    a {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 16px;
-    }
-
-    .card1 {
-        height: 400px;
-        width: 120px;
-
-        flex: 1;
-        transition: .3s all ease;
-        background-image: url(./assets/c1c05153-f6b6-471f-a45d-276750cc5c1a.jpeg);
-        border-right: solid rgb(255, 255, 255);
-        background-position: center;
-        background-size: cover;
-        border-bottom: solid #ff0000;
-
-    }
-
-    .card2 {
-        height: 400px;
-        width: 120px;
-
-
-        flex: 1;
-
-        transition: .3s all ease;
-        background-image: url(./assets/hamburgueria_em_maua_abc_imovel_blog.jpg);
-        background-position: center;
-        background-size: cover;
-        border-bottom: solid #ff0000;
-
-    }
-
-    .card3 {
-        border-left: solid rgb(255, 255, 255);
-        height: 400px;
-        width: 120px;
-
-        flex: 1;
-        transition: .3s all ease;
-        background-image: url(./assets/refri-guarana.webp);
-        background-position: center;
-        background-size: cover;
-        border-bottom: solid #ff0000;
-    }
-
-    h2 {
-        color: #ffffff;
-        font-size: 35px;
-        display: flex;
-        line-height: 42px;
-        margin-left: 4px;
-
-    }
-
-    .cardapio {
-        display: grid;
-        list-style: none;
-        grid-template-columns: 100px 100px 100px;
-        gap: 11px;
-        position: relative;
-        left: 5px;
-        bottom: 50px;
-
-    }
-
-    .cardmenu {
-        width: 97px;
-        height: 162px;
-        border-radius: 10px;
-        background: #212121;
-        -webkit-box-shadow: -11px -8px 19px 1px rgba(255, 255, 255, 0.48);
-        -moz-box-shadow: -11px -8px 19px 1px rgba(255, 255, 255, 0.48);
-        box-shadow: -11px -8px 19px 1px rgba(255, 255, 255, 0.48);
-        transition: 0.2s ease-in-out;
-
-    }
-
-    p {
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 900;
-        margin-left: 10px;
-    }
+@media screen and (max-width:1100px) {
 
     .fundo {
         background-image: url(./assets/6f48643ecafbedae88eea843eb3fdbd7.jpg);
         padding-bottom: 370px;
         z-index: -1;
-        width: 360px;
+        width: 100%;
     }
 
     .buttons {
-        margin-left: 27px;
-        margin-bottom: 70px;
-        cursor: pointer;
-    }
 
-    .bt {
-        color: rgb(255, 255, 255);
-        border: none;
-        background-color: transparent;
-        padding-left: 35px;
-        font-size: 26px;
-        font-weight: 900;
-        cursor: pointer;
-        margin-left: -22px;
-        margin-bottom: 55px;
-    }
+        margin-left: 174px;
 
-    .pedirMais {
-        position: relative;
-        left: 47px;
-        bottom: -94px;
-        z-index: 1;
-        background-color: transparent;
-        width: 258px;
-        height: 44px;
-        border-radius: 30px;
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 100;
-        font-family: bold;
-        border: solid #ffffff;
-    }
-
-    #carti {
-        position: fixed;
-        border: none;
-        border-radius: 100px;
-        right: 308px;
-        bottom: 30px;
-        background-color: #ffffff;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        z-index: 1;
-
-    }
-
-    #cheddar {
-        position: absolute;
-        display: block;
-        left: 0px;
-        top: 1006px;
-        transform: translate3d(0px, -8.60058px, 0px);
-        transform-style: preserve-3d;
-        backface-visibility: hidden;
-        width: 62px;
     }
 
     #tomate {
-        position: absolute;
-        width: 86px;
-        top: 1259px;
-        left: 53px;
+        top: 893px;
+        left: 724px;
+        width: 123px;
     }
 
     #alface {
-        position: absolute;
-        width: 300px;
-        left: 60px;
-        top: 1200px;
+        width: 298px;
+        left: 785px;
+        top: 1954px;
     }
 
     #pote {
-        width: 102px;
-        position: absolute;
-        top: 460px;
-        left: 268px;
+        width: 78px;
+        top: 903px;
+        left: 965px;
+    }
+
+    .pedirMais {
+        left: 320px;
+    }
+
+}
+
+@media screen and (max-width:915px) {
+
+    .buttons {
+        margin-left: 100px;
+    }
+
+    .cardmenu {
+        width: 190px;
+        height: 251px;
+    }
+
+    .cardapio {
+        grid-template-columns: 20px 20px 20px;
+        gap: 208px;
+        margin-left: -154px;
+    }
+
+    #alface {
+
+        left: 600px;
+        top: 2026px;
+    }
+
+    .pedirMais {
+        left: 246px;
+    }
+
+    #tomate {
+        top: 893px;
+        left: 601px;
+        width: 90px;
+    }
+
+    #pote {
+        width: 78px;
+        top: 850px;
+        left: 810px;
+    }
+}
+
+@media screen and (max-width:790px) {
+    #tomate {
+        top: 908px;
+        left: 519px;
+        width: 72px;
+    }
+
+    #pote {
+        left: 692px;
+    }
+
+    #alface {
+        left: 475px;
+        top: 2026px;
+    }
+
+    .pedirMais {
+        left: 172px;
+    }
+
+    .buttons {
+        margin-left: 12px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    #animacaoTop {
+        font-size: 35px;
+    }
+
+    #pote {
+        left: 655px;
+    }
+
+    .buttons {
+        margin-left: -15px;
+    }
+
+    #alface {
+        left: 435px;
+
+    }
+
+    .pedirMais {
+        left: 159px;
+    }
+}
+
+@media screen and (max-width:708px) {
+    #animacaoTop {
+        font-size: 34px;
+    }
+
+    #pote {
+        left: 615px;
+    }
+
+    .buttons {
+        margin-left: 56px;
+    }
+
+    #alface {
+        left: 435px;
+
+    }
+
+    .pedirMais {
+        left: 159px;
+    }
+
+    .bt {
+        font-size: 45px;
+    }
+
+    #alface {
+        left: 393px;
+        top: 2007px;
+    }
+}
+
+@media screen and (max-width:665px) {
+    #animacaoTop {
+        font-size: 31px;
+    }
+
+    .card1 {
+        height: 723px;
+    }
+
+    .card2 {
+        height: 723px;
+    }
+
+    .card3 {
+        height: 723px;
+    }
+
+    h2 {
+        font-size: 58px;
+        line-height: 58px;
+    }
+
+    .buttons {
+        margin-left: 25px;
+    }
+
+    #tomate {
+        top: 821px;
+        left: 424px;
+    }
+
+    #pote {
+        left: 569px;
+        top: 778px;
+    }
+
+    #cheddar {
+        width: 43px;
+    }
+
+    .cardmenu {
+        width: 128px;
+        height: 188px;
+    }
+
+    .cardapio {
+
+        gap: 144px;
+        margin-left: -105px;
+    }
+
+    #alface {
+        left: 350px;
+        top: 1716px;
+    }
+
+    .pedirMais {
+        left: 99px;
     }
 
 
 
 
+}
+
+@media screen and (max-width:593px) {
+    .card1 {
+        height: 423px;
+    }
+
+    .card2 {
+        height: 423px;
+    }
+
+    .card3 {
+        height: 423px;
+    }
+
+    #animacaoTop {
+        font-size: 27px;
+    }
+
+    h2 {
+        font-size: 47px;
+        line-height: 46px;
+    }
+
+    .bt {
+        font-size: 32px;
+    }
+
+    #tomate {
+        top: 505px;
+        left: 391px;
+        width: 55px;
+    }
+
+    #pote {
+        left: 493px;
+        top: 448px;
+        width: 72px;
+    }
+
+    #alface {
+        left: 312px;
+        top: 1410px;
+        width: 261px;
+    }
+
+    .pedirMais {
+        left: 74px;
+        width: 406px;
+    }
+
+
+}
+
+@media screen and (max-width:473px) {
+    #animacaoTop {
+        font-size: 19px;
+    }
+
+    h2 {
+        font-size: 35px;
+        line-height: 39px;
+    }
+
+    #tomate {
+        top: 509px;
+        left: 311px;
+        width: 42px;
+    }
+
+    #pote {
+        left: 377px;
+        top: 448px;
+        width: 59px;
+    }
+
+    .bt {
+        font-size: 25px;
+    }
+
+    .buttons {
+        margin-left: 12px;
+    }
+
+    .cardmenu {
+        width: 100px;
+        height: 167px;
+    }
+
+    p {
+
+        font-size: 16px;
+    }
+
+    .cardapio {
+        gap: 111px;
+        margin-left: -83px;
+    }
+
+    .pedirMais {
+        left: 45px;
+        width: 364px;
+        font-size: 17px;
+    }
+
+    #alface {
+        left: 195px;
+        top: 1313px;
+        width: 261px;
+    }
+}
+@media screen and (max-width:390px){
+    #animacaoTop {
+        font-size: 12px;
+    }
+    .card1 {
+        height: 352px;
+    }
+    .card2 {
+        height: 352px;
+    }
+    .card3 {
+        height: 352px;
+    }
+    .bt {
+        font-size: 20px;
+    }
+    .buttons {
+        margin-left: -11px;
+    }
+    #tomate {
+        top: 425px;
+        left: 256px;
+        width: 42px;
+    }
+    #pote {
+        left: 315px;
+        top: 388px;
+        width: 59px;
+    }
+    .pedirMais {
+        left: 71px;
+        width: 246px;
+        font-size: 13px;
+        height: 40px;
+        bottom: -139px;
+    }
+    .cardmenu {
+        width: 77px;
+        height: 125px;
+        border-radius: 8px
+    }
+    p {
+        font-size: 11px;
+    }
+    .cardapio {
+        gap: 88px;
+        margin-left: -53px;
+    }
+    #alface {
+        left: 133px;
+        top: 1139px;
+        width: 240px;
+    }
+    #carti{
+        bottom: 27px;
+        width: 50px;
+    }
 }
